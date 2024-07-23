@@ -502,3 +502,6 @@ body {
         padding: 0;
     }
 }
+.news-link {
+    text-decoration: underline;
+}
