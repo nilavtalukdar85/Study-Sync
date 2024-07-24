@@ -505,3 +505,126 @@ body {
 .news-link {
     text-decoration: underline;
 }
+.footer-container {
+    background-color: var(--background-color);
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+ul li {
+    list-style: none;
+}
+.footer {
+
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.social-link {
+    display: inline-block;
+    width: min-content;
+}
+.logo-link {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+.comp-logo {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2rem;
+}
+.social {
+    display: flex;
+    gap: 0.7rem;
+}
+.logo-svg {
+    height: 2rem;
+}
+.filler-text {
+    font-size: 1.03rem;
+    color: var(--gray);
+}
+.logo-name {
+    font-size: 1.4rem;
+    color: #333;
+    font-weight: bold;
+}
+.footer-grid {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+}
+.footer-grid-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.footer-grid-heading {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333333;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+ul li a {
+    text-decoration: none;
+    color: var(--gray);
+    font-size: 0.85rem;
+}
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    padding: 0.6rem;
+    padding-bottom: 0;
+    font-size: 0.75rem;
+    color: var(--gray);
+}
+.line {
+    margin-top: 2.5rem;
+    margin-bottom: 0.7rem;
+    border: 1px solid var(--light-gray);
+}
+@media screen and (max-width: 1000px) {
+    .footer {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .comp-logo {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-grid {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: start;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer-grid {
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: start;
+    }
+    ul li, .footer-grid-column {
+        text-align: center;
+    }
+}
